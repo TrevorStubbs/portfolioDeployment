@@ -1,68 +1,205 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
+	<head>
+		<title>Trevor Stubbs</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link href="assets/css/base.css" rel="stylesheet" type="text/css">
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css">
+		<link href="assets/css/modules.css" rel="stylesheet" type="text/css">
+	</head>
+	<body class="is-preload">
 
-<head>
-  <meta charset="UTF-8">
-  <title>City Explorer</title>
-  <link rel="stylesheet" href="/styles/styles.css">
+		<!-- Header -->
+			<div id="header">
 
-  <!-- Template for summary -->
-  <script type="text/x-tmpl-mustache" id="title-template">
-    <h2>Search Results for {{formatted_query}}</h2>
-  </script>
+				<div class="top">
 
-  <!-- Template for map -->
-  <script type="text/x-tmpl-mustache" id="image-template">
-    <img src="/images/map.png?lat={{latitude}}&long={{longitude}}" height="300" width="400" alt="Map of {{formatted_query}}" />
-  </script>
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img id="headshot" src="images/Headshot.jpg" alt="" /></span>
+							<h1 id="title">Trevor Stubbs</h1>
+							<p>Software Engineer</p>
+						</div>
 
-  <!-- Template for restaurant data -->
-  <script type="text/x-tmpl-mustache" id="restaurant-results-template">
-    <li>
-      <p>{{restaurant}}</p>
-      <p>{{cuisines}}</p>
-      <p>{{locality}}</p>
-    </li>
-  </script>
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="#top" id="top-link"><span class="icon fa-home">Intro</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link"><span class="icon fa-th">Portfolio</span></a></li>
+								<li><a href="#about" id="about-link"><span class="icon fa-user">About Me</span></a></li>
+								<li><a href="#contact" id="contact-link"><span class="icon fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
 
-</head>
+				</div>
 
-<body>
+				<div class="bottom">
 
-  <header>
-    <h1>City Explorer</h1>
-    <p>Enter a location below to learn about the weather, restaurants, movies, and more!</p>
-  </header>
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
 
-  <main>
+				</div>
 
-    <form id="search-form">
-      <label for="search">Search for a location</label>
-      <input type="text" name="search" id="input-search" placeholder="Enter a location here">
-      <button type="submit">Explore!</button>
-    </form>
+			</div>
 
-    <section id="map"></section>
+		<!-- Main -->
+			<div id="main">
 
-    <h2 id="title"></h2>
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
 
-    <section class="columns">
+							<header>
+								<h2 class="alt">Hi! I'm <strong>Trevor Stubbs</strong>, a former airline pilot<br />
+									Who is now <em>Software Engineer</em>.</h2> 
+								<p>Designers and Engineers are just dreamers<br />
+								 who have found a way to make their dreams a reality.</p>
+							</header>
 
-      <!-- Section for restaurant data -->
-      <section id="restaurants" class="hide">
-        <h3>Retaurants</h3>
-        <ul id="restaurant-results"></ul>
-      </section>
+							<footer>
+								<a href="#portfolio" class="button scrolly">View My Portfolio</a>
+							</footer>
 
-    </section>
+						</div>
+					</section>
 
-  </main>
-  <footer>
-  </footer>
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/mustache@latest"></script>
-  <script src="/scripts/app.js"></script>
-</body>
+							<header>
+								<h2>Portfolio</h2>
+							</header>
 
+							<p>Here is a showcase of some of projects that I have worked on.</p>
+
+							<div class="row">
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/BMPort.png" alt="" /></a>
+										<header>
+											<h3>Bus Mall</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/GHPort.png" alt="" /></a>
+										<header>
+											<h3>Gallery of Horns</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/dd.png" alt="" /></a>
+										<header>
+											<h3>Development Dungeon</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/SCPort.png" alt="" /></a>
+										<header>
+											<h3>Salmon Cookies</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/IKPort.png" alt="" /></a>
+										<header>
+											<h3>Iron Kingdoms RPG Character Creator</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/3DRCPort.png" alt="" /></a>
+										<header>
+											<h3>3D Ray Casting Demo</h3>
+										</header>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+				<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container">
+
+							<header>
+								<h2>About Me</h2>
+							</header>
+
+							<a href="#" class="image featured"><img src="images/landscape.jpg" alt="" /></a>
+
+							<p>I am a software engineer and I am a former airline pilot. Flying jet airplanes is a dream job. There is nothing like taking a 89,000 lbs airplane full of passengers up to 35,000 feet in the air and bringing it and all the passengers down safely again thousands of miles away. However, airlines are not very innovative. And rightly so they have to guarantee something works every time so they can’t try anything new. I want to do my part to push the cutting edge. </p>
+							<p>
+								I also have training as a leader. I have been a captain at my airline for about 5 years now. I am used to managing a team in stressful situations. I also have a depth of understanding when it comes to working with different types of people. As a captain I have to coordinate between other pilots, air traffic controllers, ground crew, flight attendants, and passengers. And the way I lead and interact with each group has to be different. I can bring this understanding of working with desperate types of people to the tech world.
+							</p>
+							<p>
+								I also love building things. I have taught myself how to paint and sew. I also build and fly radio controlled airplanes. I am able to bring these skills directly into software building. The thought process to designing a pattern for a sewing project or installing radio gear into a model airplane is the same as building software. I am learning the tools of software design and construction and I have found that my design skills help when it comes to building better software.
+							</p>
+							<p>
+								I am able to put together my desire to innovate with my skills as a designer and a leader into a very productive person. I am excited to roll up my sleeves and start working on some complex problems with a team.
+							</p>
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+
+							<p>If you would like to hire me as a contractor please leave your information and I will get back to you as soon as I can.</p>
+
+							<form method="post" action="#">
+								<div class="row">
+									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="col-12">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="col-12">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
