@@ -2061,7 +2061,7 @@ footer, header, hgroup, menu, nav, section {
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/OutofTime.jpg");
+				/* background-image: url("../../images/OutofTime.jpg"); */
 				background-image: url("https://media.giphy.com/media/CIjXMxobcEnkI/giphy.gif");
 				opacity: .80;
 			}
