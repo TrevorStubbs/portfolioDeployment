@@ -2125,7 +2125,7 @@ footer, header, hgroup, menu, nav, section {
 
 /* Narrow */
 
-	@media screen and (min-width: 961px) and (max-width: 1320px) {
+	@media screen and (min-width: 737px) and (max-width: 1320px) {
 
 		/* Basic */
 
@@ -2197,7 +2197,7 @@ footer, header, hgroup, menu, nav, section {
 		display: none;
 	}
 
-	@media screen and (max-width: 960px) {
+	@media screen and (max-width: 737px) {
 
 		/* Basic */
 
